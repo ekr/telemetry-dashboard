@@ -506,6 +506,7 @@
       "/channels/" + encodeURIComponent(channel) + "?dates=" +
       encodeURIComponent(dates) + "&metric=" + encodeURIComponent(metric) +
       filterString;
+    console.log(url);
     Telemetry.getJSON(url, function (histograms, status) {
       if (histograms === null) {
         assert(status === 404, "Could not obtain evolution: status " +
