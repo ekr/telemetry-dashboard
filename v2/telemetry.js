@@ -487,7 +487,7 @@
     });
   }
 
-  Telemetry.getEvolution2 = function Telemetry_getEvolution(channel, metric, filters, callback) {
+  Telemetry.getEvolution2 = function Telemetry_getEvolution2(channel, metric, filters, callback) {
     assert(Telemetry.CHANNEL_VERSION_DATES !== null && Telemetry.CHANNEL_VERSION_BUILDIDS !==
       null, "Telemetry.js must be initialized before use");
     assert(typeof channel === "string", "`channel` must be a string");
