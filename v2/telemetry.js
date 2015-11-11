@@ -502,8 +502,7 @@
         filterString += "&" + encodeURIComponent(filterName) + "=" +
           encodeURIComponent(filters[filterName]);
       });
-    var url = Telemetry.BASE_URL + "aggregates_by/" + (useSubmissionDate ?
-        "submission_date" : "build_id") +
+    var url = Telemetry.BASE_URL + "aggregates_by/" + "submission_date" +
       "/channels/" + encodeURIComponent(channel) + "?dates=" +
       encodeURIComponent(dates) + "&metric=" + encodeURIComponent(metric) +
       filterString;
